@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응형이미지템플릿</title>
+    <style>
+        /* html{box-sizing: border-box;}
+        *{box-sizing: inherit;} */
+        *{box-sizing: border-box;}
+        .column{
+            float: left;
+            width: 33.33%;
+            margin-bottom: 1em;
+            padding: 0 0.5em;
+            
+        }
+        .card{
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            border-radius: 0.5em;
+        }
+        .card img{width: 100%}
+
+        .container{
+            padding: 0 1em;
+        }
+        .container::after, row::after{
+            content: "";
+            clear: both;
+            display: block;
+        }
+        .title{
+            color: lightcoral;
+        }
+        .btn{
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 0.5em;
+            color: white;
+            background-color: pink;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+            margin-bottom: 1em;
+        }
+        .btn:hover{
+            background-color: skyblue;
+        }
+
+        @media screen and (max-width: 650px){
+            .column{
+                width: 100%;
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <img src="img01.jpg">
+                <div class="container">
+                    <h2>대학생</h2>
+                    <p class="title">나다</p>
+                    <p>집갈래집보내줘</p>
+                    <p>집가고싶다</p>
+                    <p><button class="btn">집가기</button></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="column">
+        <div class="card">
+            <img src="img01.jpg">
+            <div class="container">
+                <h2>대학생</h2>
+                <p class="title">나다</p>
+                <p>집갈래집보내줘</p>
+                <p>집가고싶다</p>
+                <p><button class="btn">집가기</button></p>
+            </div>
+        </div>
+    </div>
+    <div class="column">
+        <div class="card">
+            <img src="img01.jpg">
+            <div class="container">
+                <h2>대학생</h2>
+                <p class="title">나다</p>
+                <p>집갈래집보내줘</p>
+                <p>집가고싶다</p>
+                <p><button class="btn">집가기</button></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
